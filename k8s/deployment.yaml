@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: go-hpa
-          image: gmeneguz/go-hpa
+          image: img-app-deployment #Replaced by CD Build
           ports:
             - containerPort: 8000
           resources:
