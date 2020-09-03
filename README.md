@@ -17,3 +17,7 @@ kubectl run -it --rm load-generator --image=busybox /bin/sh
 
 while true; do wget -q -O- http://go-hpa-service.default.svc.cluster.local:8000; done;
 ```
+
+# Desafio Deploy Contínuo
+
+Arquivo Cloudbuild para deploy: cloudbuild.prod.yaml
