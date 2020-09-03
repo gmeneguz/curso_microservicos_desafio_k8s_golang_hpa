@@ -11,7 +11,7 @@ steps:
 
   - id: "Push da imagem"
     name: "gcr.io/cloud-builders/docker"
-    args: ["push", "-t", "gcr.io/$PROJECT_ID/go_hpa:$SHORT_SHA"]
+    args: ["push", "gcr.io/$PROJECT_ID/go_hpa:$SHORT_SHA"]
 
   - id: "Ajustando Deployment do App no k8s"
     name: "gcr.io/cloud-builders/gcloud"
